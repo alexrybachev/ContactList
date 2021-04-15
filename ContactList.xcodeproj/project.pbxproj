@@ -16,6 +16,7 @@
 		284401F02626F96500E01A5B /* PersonDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284401EF2626F96500E01A5B /* PersonDetailViewController.swift */; };
 		284401F42626FB4900E01A5B /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284401F32626FB4900E01A5B /* PersonModel.swift */; };
 		284401F82626FEC100E01A5B /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284401F72626FEC100E01A5B /* Arrays.swift */; };
+		284401FD2627EFE600E01A5B /* SectionListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 284401FC2627EFE600E01A5B /* SectionListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		284401EF2626F96500E01A5B /* PersonDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailViewController.swift; sourceTree = "<group>"; };
 		284401F32626FB4900E01A5B /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
 		284401F72626FEC100E01A5B /* Arrays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrays.swift; sourceTree = "<group>"; };
+		284401FC2627EFE600E01A5B /* SectionListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				284401EC2626F8EC00E01A5B /* ContactListViewController.swift */,
 				284401EF2626F96500E01A5B /* PersonDetailViewController.swift */,
+				284401FC2627EFE600E01A5B /* SectionListTableViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 				284401D02626F26C00E01A5B /* AppDelegate.swift in Sources */,
 				284401F82626FEC100E01A5B /* Arrays.swift in Sources */,
 				284401D22626F26C00E01A5B /* SceneDelegate.swift in Sources */,
+				284401FD2627EFE600E01A5B /* SectionListTableViewController.swift in Sources */,
 				284401F42626FB4900E01A5B /* PersonModel.swift in Sources */,
 				284401F02626F96500E01A5B /* PersonDetailViewController.swift in Sources */,
 				284401ED2626F8EC00E01A5B /* ContactListViewController.swift in Sources */,

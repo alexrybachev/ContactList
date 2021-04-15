@@ -59,5 +59,6 @@ class DataManager {
         "yitotj@mail.ru",
         "rrrr@rambler.ru"
     ]
+    
 }
 
