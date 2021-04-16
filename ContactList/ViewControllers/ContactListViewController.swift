@@ -9,28 +9,22 @@ import UIKit
 
 class ContactListViewController: UITableViewController {
     
-    private var person = Person.getPersonList()
+    var persons: [Person] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 60
-        
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-        
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        person.count
+        persons.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
-        let somePerson = person[indexPath.row]
+        let somePerson = persons[indexPath.row]
         
         var content = cell.defaultContentConfiguration()
         content.text = somePerson.fullName
@@ -41,21 +35,22 @@ class ContactListViewController: UITableViewController {
         return cell
     }
     
-    // MARK: - Table view delegate
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-//        let personSelected = person[indexPath.row]
-//        performSegue(withIdentifier: "showDetails", sender: track)
-    }
-    
      // MARK: - Navigation
-     
+    
+     /*
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let personDetailVC = segue.destination as? PersonDetailViewController else { return }
+        let personDetailVC = segue.destination as! PersonDetailViewController
         guard let personsIndex = tableView.indexPathForSelectedRow else { return }
-        let personSelected = person[personsIndex.row]
+        let personSelected = persons[personsIndex.row]
         
         personDetailVC.personDetail = personSelected
      }
+    */
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let indexPath = tableView.indexPathForSelectedRow {
+            let personDetailVC = segue.destination as! PersonDetailViewController
+            personDetailVC.personDetail = persons[indexPath.row]
+        }
+    }
 }

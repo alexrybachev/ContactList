@@ -34,14 +34,14 @@
                             <outlet property="delegate" destination="dbl-71-rF3" id="Cda-sy-H8z"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="Bbj-g5-sYH"/>
+                    <tabBarItem key="tabBarItem" systemItem="contacts" id="Bbj-g5-sYH"/>
                     <navigationItem key="navigationItem" title="Persons List" id="5uH-Cm-6ji"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9U5-U5-Rqq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="418" y="-359"/>
         </scene>
-        <!--Item-->
+        <!--Section List Table View Controller-->
         <scene sceneID="7cb-zB-Qy2">
             <objects>
                 <tableViewController id="hCa-Yz-v2Q" customClass="SectionListTableViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
@@ -64,7 +64,7 @@
                             <outlet property="delegate" destination="hCa-Yz-v2Q" id="kIM-0r-chZ"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="Item" id="51q-ma-8tq"/>
+                    <tabBarItem key="tabBarItem" tag="1" systemItem="featured" id="51q-ma-8tq"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zlk-1r-BFa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -129,12 +129,12 @@
             </objects>
             <point key="canvasLocation" x="-1161" y="-19"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Persons List-->
         <scene sceneID="IVm-Oh-KfJ">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tdb-7B-zLR" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Tdb-7B-zLR" customClass="TabBarViewController" customModule="ContactList" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="6r7-Q6-vPt"/>
+                    <navigationItem key="navigationItem" title="Persons List" id="6r7-Q6-vPt"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Plv-ix-BP0">
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
